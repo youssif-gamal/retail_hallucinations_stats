@@ -10,6 +10,7 @@ venv/
 # Cache files
 *.log
 *.csv
+*.png
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
@@ -32,3 +33,5 @@ build/
 *.local
 
 queries_cache/*
+queries_400_cache/*
+statistics_results/*
