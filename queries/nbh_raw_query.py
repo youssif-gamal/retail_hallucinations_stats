@@ -80,7 +80,7 @@ class SimpleNBHDateRangeQuery(BigQueryQuery):
                 AND JSON_VALUE(event_misc, "$.ed.cd.hit") = "false"
                 {nbh_condition}
                 AND JSON_EXTRACT_SCALAR(event_misc, "$.st") IS NOT NULL
-                AND JSON_EXTRACT_SCALAR(event_misc, "$.curl") LIKE '/search?q={helpers.url_encode_query(self.search_term)}%'
+                AND JSON_EXTRACT_SCALAR(event_misc, "$.curl") LIKE '/search?q={helpers.url_encode_query(self.search_term)}'
             ORDER BY
                 event_date, nbh
         """
